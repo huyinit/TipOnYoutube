@@ -28,7 +28,7 @@ Cop:
   <role rolename="manager-jmx"/>
   <role rolename="manager-status"/>
   <user username="huyinit"
-      password="132001"
+      password="huyinit"
       roles="manager-gui,manager-script,manager-jmx,manager-status"/>
 
 http://localhost:8080/
