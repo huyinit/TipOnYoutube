@@ -1,0 +1,37 @@
+netbean:
+JDK:Java Downloads | Oracle
+Downloading Apache NetBeans 12.6
+Apache TomcaT: https://tomcat.apache.org/download-90.cgi
+32-bit/64-bit Windows Service Installer (pgp, sha512)
+
+Cmd
+java –version
+TẢI TOMCAT
+Gõ localhost:8080
+cd C:\Program Files\Apache Software Foundation\Tomcat 9.0\bin
+startup.bat
+lỗi :
+Neither the JAVA_HOME nor the JRE_HOME environment variable is defined
+At least one of these environment variable is needed to run this program
+C:\Program Files\Apache Software Foundation\Tomcat 9.0\bin>
+This pc => proper=>advance setting => enviroment
+Thêm :
+JAVA_HOME + C:\Program Files\Java\jdk-17.0.2
+Hoặc :
+set JAVA_HOME="C:\DevPrograms\Java\jdk1.8.0_144"
+mở file:
+C:\Program Files\Apache Software Foundation\Tomcat 9.0\conf
+Mở tomcatuser....
+Cop:
+<role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>
+  <user username="huyinit"
+      password="132001"
+      roles="manager-gui,manager-script,manager-jmx,manager-status"/>
+
+http://localhost:8080/
+link: https://openplanning.net/11583/cai-dat-tomcat-server
+
+mở apache =>tool => server => add => .... => xong
